@@ -1,2 +1,2 @@
 # Personal-Site
-My personal, onlime portfolio webpage
+My personal, online portfolio webpage
