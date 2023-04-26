@@ -7,9 +7,9 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
+  --bg-color: #494949;
+  --primary-color: #ffffff;
+  --secondary-color: #06a500;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -47,6 +47,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  background-color: var(--bg-color);
 }
 
 /*navbar*/
@@ -60,7 +61,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
+  background-color: #2d2d2d;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 nav h1 {
@@ -103,17 +104,22 @@ nav ul li {
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
+  padding: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-.hero img {
+/*.hero img {
   height: 37.5rem;
   width: 37.5rem;
-}
+}*/
 
 .bio {
-  width: 25rem;
+  width: 30rem;
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  background-color:rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
 }
 
 .bio h1 {
@@ -130,16 +136,19 @@ nav ul li {
 .more-about {
   background-color: var(--bg-color);
   padding: 1rem 6rem;
+  color: var(--primary-color);
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  color: var(--primary-color);
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  color: var(--primary-color);
 }
 
 /* Skills */
@@ -149,6 +158,8 @@ nav ul li {
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
 }
 
 .skill-header {
@@ -214,6 +225,7 @@ nav ul li {
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .project-container {
@@ -250,6 +262,7 @@ nav ul li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  color:var(--primary-color);
 }
 
 .contact-form-container {
@@ -257,7 +270,7 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  background-color: #5b5b5b;
 }
 .contact-form-container label {
   line-height: 2.7em;
@@ -319,10 +332,11 @@ nav ul li {
 /* footer */
 
 footer {
-  background-color: var(--bg-color);
+  background-color: #2d2d2d;
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+  color: var(--primary-color);
 }
 
 /* scroll to top */
@@ -380,7 +394,7 @@ footer {
     }
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 5rem;
     width: 20.5rem;
   }
   .more-about {
@@ -405,6 +419,7 @@ footer {
 
   .project-container {
     width: 20.875rem;
+    height: 26rem;
   }
   .contact-form-container {
     max-width: 23.75rem;
