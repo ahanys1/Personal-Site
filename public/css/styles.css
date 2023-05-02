@@ -109,7 +109,8 @@ nav ul li {
   background-color: var(--header-color);
   background-repeat: no-repeat;
   background-size:cover;
-
+  
+  
 }
 /*.hero img {
   height: 37.5rem;
@@ -160,24 +161,24 @@ nav ul li {
 .more-info-wrapper{
   background-color: rgba(0,0,0,0.2);
   border-radius: 10px;
-  width: 500px;
+  width: 50%;
   align-items: center;
-  
 }
 
 .info-image{
   display: flex;
   align-items:center;
+
 }
 
 .me-photo{
-  width: 400px;
+  width: 50%;
   border-radius: 10px;
-  
 }
 .skiing-photo{
   width: 400px;
   border-radius: 10px;
+  margin-right: 7%;
 }
 /* Skills */
 
@@ -383,7 +384,7 @@ footer {
 
 /*mobile/tablets*/
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
   /*changes when viewing on mobile devices*/
   nav {
     padding: 1.5rem 1rem;
@@ -427,11 +428,31 @@ footer {
   }
   .more-about {
     margin-top: 2rem;
-    padding: 1rem 3.5rem;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .info-image{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
   }
 
   .more-info-wrapper{
-    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .me-photo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .skiing-photo{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .more-about h2 {
