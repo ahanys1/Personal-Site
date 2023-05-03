@@ -1,7 +1,7 @@
 // imports
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 
 //static files
@@ -11,7 +11,7 @@ app.use("/js", express.static(__dirname + '/public/js'));
 app.use("/img", express.static(__dirname + '/public/img'));
 
 //set views
-app.set('views', './public/views');
+app.set('views', __dirname + '/public/views');
 app.set('view engine', 'ejs');
 
 //nav
