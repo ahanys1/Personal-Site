@@ -11,7 +11,7 @@ app.use("/js", express.static(__dirname + '/public/js'));
 app.use("/img", express.static(__dirname + '/public/img'));
 
 //set views
-app.set('views', __dirname + '/public/views');
+app.set('index', '/views');
 app.set('view engine', 'ejs');
 
 //nav
