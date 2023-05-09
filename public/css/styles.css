@@ -476,7 +476,7 @@ footer {
 
   .project-container {
     width: 20.875rem;
-    height: 26rem;
+    height: auto;
   }
   .contact-form-container {
     max-width: 23.75rem;
